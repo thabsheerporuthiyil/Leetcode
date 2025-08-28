@@ -5,9 +5,9 @@
 var addDigits = function(num) {
     while(num>=10){
         let sum=0;
-        let n=num.toString();
-        for(let i=0;i<n.length;i++){
-            sum+=parseInt(n[i]);
+        while(num>0){
+            sum+=num%10;
+            num=Math.floor(num/10);
         }
         num=sum;
     }

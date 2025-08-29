@@ -3,9 +3,10 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
+    let result=0;
     for(let val of nums){
-        if(nums.indexOf(val)===nums.lastIndexOf(val)){
-            return val;
-        }
+        result ^= val;
     }
-};
+    return result;
+    };
+    

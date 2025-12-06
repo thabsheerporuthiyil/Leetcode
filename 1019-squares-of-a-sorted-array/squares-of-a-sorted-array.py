@@ -1,8 +1,10 @@
-class Solution(object):
-    def sortedSquares(self, nums):
-        res=[]
-        for n in nums:
-            res.append(n**2)
-            res.sort()
-        return res
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        arr=[]
+        for i in nums:
+            arr.append(i**2)
+        arr.sort()
+        return arr
+
+
         
